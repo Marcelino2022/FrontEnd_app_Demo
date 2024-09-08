@@ -1,0 +1,23 @@
+.cover {
+  position: absolute;
+  @apply bg-gray-200  border-b-4 w-full max-h-screen top-16 md:top-8 sm:top-4;
+
+  .content {
+    position: absolute;
+    @apply text-gray-200 px-10 py-28 w-full h-full top-0;
+    @apply md:py-14 sm:py-7;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: end;
+    font-size: 50px;
+  
+    .inner-content{
+      @apply grid grid-flow-row auto-rows-max hover:auto-rows-min w-full;
+    }
+  }
+}
+
+
+
+

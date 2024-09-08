@@ -1,0 +1,37 @@
+@import '../mixins/button-mixin';
+@import '../variables';
+
+
+.btn-primary{
+    @include button($primary-color, $white);
+}
+
+.btn-primary-outline{
+  @include buttonOutline($primary-color, $white);
+}
+
+.btn-white-outline{
+  @include buttonOutline($white, $white);
+}
+
+
+.btn-secondary{
+  @include button($secondary-color, $white);
+}
+
+.btn-darck{
+  @include button-darck($darck-color, $white)
+}
+
+
+.round-primary-btn{
+  @include roundButton($primary-color, $white)
+}
+
+.round-light-primary-btn{
+  @include roundButton(lighten($primary-color, 50%), $primary-color)
+}
+
+.round-primary-outline-btn{
+  @include roundOutlineButton($primary-color, $primary-color)
+}

@@ -1,0 +1,123 @@
+// Mixin para botões
+@mixin button($bg-color, $text-color, $border-radius: 5px) {
+    background-color: $bg-color;
+    color: $text-color;
+    @apply px-4 py-2 text-xs sm:text-base;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg-color, 5%);
+    }
+  
+    &:active {
+      background-color: darken($bg-color, 20%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px lighten($bg-color, 30%);
+    }
+  }
+
+
+  @mixin button-darck($bg-color, $text-color, $border-radius: 5px) {
+    background-color: $bg-color;
+    color: $text-color;
+    @apply px-4 py-2 text-xs sm:text-base;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: lighten($bg-color, 5%);
+    }
+  
+    &:active {
+      background-color: darken($bg-color, 20%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px lighten($bg-color, 25%);
+    }
+  }
+  
+
+  @mixin buttonOutline($bg-color, $text-color, $padding: 10px 20px, $border-radius: 5px) {
+    background-color: transparent;
+    color: $text-color;
+    @apply px-4 py-2 text-xs sm:text-base;
+    border: 2px solid $bg-color;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg-color, 3%);
+      border: 2px solid darken($bg-color, 3%);
+      color: darken($text-color, 60%);
+    }
+  
+    &:active {
+      background-color: darken($bg-color, 20%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px lighten($text-color, 30%);
+    }
+  }
+
+
+
+  @mixin roundButton($bg-color, $text-color, $border-radius: 5px) {
+    background-color: $bg-color;
+    color: $text-color;
+    @apply px-4 py-2 text-xs sm:text-base rounded-full;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg-color, 5%);
+    }
+  
+    &:active {
+      background-color: darken($bg-color, 20%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px lighten($bg-color, 30%);
+    }
+  }
+
+
+
+  @mixin roundOutlineButton($bg-color, $text-color, $padding: 10px 20px, $border-radius: 5px) {
+    background-color: transparent;
+    color: $text-color;
+    @apply px-4 py-2 text-xs sm:text-base rounded-full;
+    border: 2px solid $bg-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg-color, 3%);
+      border: 2px solid darken($bg-color, 3%);
+      color: lighten($text-color, 60%);
+    }
+  
+    &:active {
+      background-color: darken($bg-color, 10%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px lighten($text-color, 30%);
+    }
+  }

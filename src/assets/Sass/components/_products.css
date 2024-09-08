@@ -1,0 +1,3 @@
+.view-product {
+  @apply flex gap-2 pt-36;
+}

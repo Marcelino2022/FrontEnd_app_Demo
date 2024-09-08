@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+@import 'app';
+@import 'pages/about';
+@import 'pages/marketplace';
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/buttons';
+@import 'components/products';
+@import 'components/cover';
+@import 'components/cards';
+

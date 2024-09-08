@@ -1,0 +1,23 @@
+.cards-grid {
+  @apply grid gap-4 flex-col sm:grid-cols-3 lg:grid-cols-5;
+}
+
+.custom-grid-flex-cols {
+  @apply grid gap-4 flex-col sm:grid-cols-3 lg:grid-cols-5;
+}
+
+.custom-grid-cols-2 {
+  @apply grid gap-4 flex-col sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.cards-grid-title {
+  @apply sm:h-20 sm:max-h-20;
+}
+
+.cards-grid-title h3 {
+  @apply font-medium;
+}
+
+.cards-grid-footer {
+  @apply w-full flex justify-end p-2 items-center;
+}

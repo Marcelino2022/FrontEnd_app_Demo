@@ -1,0 +1,93 @@
+@import '../variables';
+
+.header{
+    z-index: 200000;
+    position: fixed;
+    @apply w-full px-6 py-2 items-center content-center border-green-600 bg-white border-b-4;
+
+    .header-logo{
+      display: flex;
+      align-items: center;
+      color: #001A0F;
+
+      span{
+        @apply hidden sm:flex font-bold text-4xl;
+      }
+    }
+
+
+    #sm-menu{
+        @apply font-semibold text-xl hover:text-green-800 duration-300;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    @apply hidden md:flex justify-center basis-8/12;
+    transition: .3s ease-in;
+    color: $darck-color;
+    li{
+        @apply duration-300;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.header-green{
+    background-color: $primary-color;
+    color: $white;
+    @apply px-6 py-4 font-medium;
+}
+
+
+.marketplace-header{
+    z-index: 100000;
+    position: fixed;
+    @apply w-full px-6 py-4 text-sm sm:text-base;
+    background-color:  opacify($primary-color, 0.8);
+
+    .header-logo{
+      display: flex;
+      align-items: center;
+      color: #001A0F;
+
+      span{
+        @apply hidden sm:flex font-bold text-4xl;
+      }
+    }
+
+    #sm-menu{
+        @apply font-semibold text-xl hover:text-green-800 duration-300;
+        cursor: pointer;
+    }
+}
+
+
+.product-header{
+    z-index: 200000;
+    position: fixed;
+    @apply w-full px-6 py-2 font-medium duration-300;
+    background-color:  lighten($primary-color, 50%);
+    color: darken($primary-color, 20%);
+
+    span{
+        &:hover{
+            color: darken($primary-color, 5%);
+        }
+    }
+}
+
+
+.footer-menu{ 
+    @apply w-full flex justify-center items-start h-44; 
+    color: $primary-color;
+
+    li{
+        @apply duration-300;
+        &:hover {
+            color: darken($primary-color, 10%);
+        }
+    }
+}
+
